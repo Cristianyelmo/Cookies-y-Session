@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="https://kit.fontawesome.com/c63e399f09.js" crossorigin="anonymous"></script>
+    <script src="/javascripts/Cambiocolor.js" defer></script>
+    <script src="/javascripts/sweetAlert.js" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+  </head>
+  <body class="<%= locals.Colores && locals.Colores.color === "Amarillo" ? "amarillo" :null ||locals.Colores && locals.Colores.color === "Celeste" ? "celeste" :null ||locals.Colores && locals.Colores.color === "Negro" ? "negro" :null 
+  ||locals.Colores && locals.Colores.color === "Rosa" ? "rosa" :null ||locals.Colores && locals.Colores.color === "Verde" ? "verde" :null ||locals.Colores && locals.Colores.color === "Violeta" ? "violeta" :null%>" >
+
+<% if (locals.Colores) { %>
+  <div class="caja_texto">
+    <p>
+     Hola <%=Colores.name%>, elegiste el color:<%=Colores.color%>, tu email es:
+     <%=Colores.email%> y tu edad es:<%=Colores.edad%>
+    </p>
+   </div>
+  
+ 
+<% } %>
+
+
+
+
+
+
+
+
+
+
+    <div class="caja_contenedora">
+    <form action="" method="POST" id="form-colores">
+<label for=""class="checkbox-1">
+<h3>ingrese su nombre</h3>
+<input type="text" name="name" class="input-one">
+<small><%= locals.errors && locals.errors.name ? errors.name.msg :null%></small>
+</label>
+
+<label for=""class="checkbox-1">
+  <h3>ingrese su email</h3>
+  <input type="email" name="email" class="input-one">
+  <small><%= locals.errors && locals.errors.email ? errors.email.msg :null%></small>
+  </label>
+
+  <label for=""class="checkbox-1">
+    <h3>ingrese su edad</h3>
+    <input type="number" name="edad" class="input-one">
+    <small><%= locals.errors && locals.errors.edad ? errors.edad.msg :null%></small>
+    </label>
+    
+    <select name="color" id="color"  class="input-one"
+
+
+
+>
+<option value="" selected hidden>Seleccione Color</option>
+<option value="Amarillo"  style="background-color: #FED605;">Amarillo</option>
+<option value="Celeste" style="background-color: #58B8EC;">Celeste</option>
+<option value="Negro" style="background-color: #1A191D;">Negro</option>
+<option value="Violeta" style="background-color: #4F2F8C;">Violeta</option>
+<option value="Rosa" style="background-color: #EE95BD;">Rosa</option>
+<option value="Verde" style="background-color: #029045;">Verde</option>
+
+</select>
+<small><%= locals.errors && locals.errors.color ? errors.color.msg :null%></small>
+
+<label for="" class="checkbox">
+  <h3>Recordarmelo mas tarde</h3>
+  <input type="checkbox" class="input-checkbox">
+
+  </label>
+  
+
+
+<button type="submit">
+  Guardar
+</button>
+
+
+
+    </form>
+
+    
+
+
+  </div>
+
+  
+  
+  </body>
+
+</html>

@@ -1,0 +1,137 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  display: flex;
+  justify-content: flex-end;
+}
+
+a {
+  color: #00B7FF;
+}
+
+
+
+.caja_contenedora{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 20px 60px;
+  width: 300px;
+  box-shadow: 5px 5px 20px;
+  border-radius: 20px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.checkbox-1{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 5px 0px;
+}
+
+.input-one{
+  box-shadow: 2px 2px 10px;
+    border: none;
+    border-radius: 5px;
+    height: 25px;
+}
+
+select{
+  height: 30px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+option{
+  color:white
+}
+
+button{
+  background-color: black;
+  color: white;
+  margin-top: 40px;
+  height: 30px;
+  border-radius: 10px;
+
+}
+
+.colorrosa{
+  background-color: #EE95BD
+}
+
+.colorxd{
+  background-color: red
+}
+
+small{
+  margin: 5px;
+  color: red;
+  text-align: center;
+}
+
+
+.input-checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+.checkbox{
+  display: flex;
+  justify-content: center;
+  margin: 10px 0px;
+}
+
+.checkbox h3{
+  margin: 5px;
+}
+
+
+.amarillo{
+ background-image: url(/images/amarillo.jpg);
+background-size:contain;
+}
+
+.celeste{
+  background-image: url(/images/celeste.jpg);
+ background-size:contain;
+ }
+
+ .verde{
+  background-image: url(/images/verde.jpg);
+ background-size:contain;
+ }
+ 
+ .negro{
+   background-image: url(/images/negro.jpg);
+  background-size:contain;
+  }
+
+
+  .rosa{
+    background-image: url(/images/rosa.jpg);
+   background-size:contain;
+   }
+
+
+   .violeta{
+    background-image: url(/images/violeta.jpg);
+   background-size:contain;
+   }
+
+
+   .caja_texto{
+    background-color: black;
+    color: white;
+    opacity: 90%;
+    margin: 0px 40px;
+    padding: 20px;
+    height: 40px;
+    border-radius: 10px;
+    position: relative;
+    top: 420px;
+   }
