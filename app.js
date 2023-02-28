@@ -8,7 +8,9 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 const session = require('express-session');
+const localCookie = require('./middlewares/localCookie');
 const localCheckcolores = require('./middlewares/localCheckcolores');
+
 
 var app = express();
 
@@ -26,7 +28,7 @@ app.use(session({
   resave:false,
   saveUninitialized:true
 }))
-
+app.use(localCookie)
 app.use(localCheckcolores)
 
 app.use('/', indexRouter);

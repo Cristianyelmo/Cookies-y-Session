@@ -20,21 +20,9 @@ Swal.fire({
     imageUrl: 'https://media.tenor.com/ZRmKGlWN4XEAAAAC/sakuragi-hanamichi.gif',
   imageHeight: 300,
   imageWidth: 300,
-  
-    
-    
     title: 'Listou!',
-    
-
-
-
-
-
-
-
-
     showConfirmButton: false,
-    timer: 2300 
+  timer: 4300 
   })
 
 

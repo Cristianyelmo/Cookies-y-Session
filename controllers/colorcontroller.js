@@ -33,6 +33,14 @@ res.render('index')
            name,email,edad,color
             
         };
+
+        if(req.body.remember){
+
+            
+
+            
+            res.cookie('UserColores',req.session.Colores,{maxAge:1000*60})
+        }
  
         return res.redirect('/')
 
