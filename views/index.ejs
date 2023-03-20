@@ -6,6 +6,8 @@
     <script src="https://kit.fontawesome.com/c63e399f09.js" crossorigin="anonymous"></script>
     <script src="/javascripts/Cambiocolor.js" defer></script>
     <script src="/javascripts/sweetAlert.js" defer></script>
+    <script src="/javascripts/sonido.js" defer></script>
+    
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
   </head>
   <body class="<%= locals.Colores && locals.Colores.color === "Amarillo" ? "amarillo" :null ||locals.Colores && locals.Colores.color === "Celeste" ? "celeste" :null ||locals.Colores && locals.Colores.color === "Negro" ? "negro" :null 
@@ -72,7 +74,7 @@
   
 
 
-<button type="submit">
+<button type="submit" id="sonidoxd">
   Guardar
 </button>
 
