@@ -34,7 +34,7 @@
 
 
     <div class="caja_contenedora">
-    <form action="" method="POST" id="form-colores" data-user="<%=locals.Colores && locals.Colores.name %>" >
+    <form action="" method="POST" id="form-colores" data-user="<%=locals.Colores && locals.Colores.name %>" data-error="<%=locals.errors && locals.errors.edad %>" >
 <label for=""class="checkbox-1">
 <h3>ingrese su nombre</h3>
 <input type="text" name="name" class="input-one">
@@ -74,7 +74,7 @@
   
 
 
-<button type="submit" id="sonidoxd">
+<button type="submit" id="<%= locals.errors && locals.errors.edad ||locals.errors && locals.errors.email ||locals.errors && locals.errors.color ||locals.errors && locals.errors.name ? 'xd' : 'sonidoxd'%>">
   Guardar
 </button>
 
